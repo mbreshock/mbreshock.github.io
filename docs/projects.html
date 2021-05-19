@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Projects</title>
+
+<script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Michael Breshock</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="./education.html">Education</a>
+</li>
+<li>
+  <a href="./projects.html">Projects</a>
+</li>
+<li>
+  <a href="./pubsprez.html">Publications &amp; Presentations</a>
+</li>
+<li>
+  <a href="./coursesskills.html">Courses &amp; Skills</a>
+</li>
+<li>
+  <a href="./honors.html">Honors</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/mbreshock">
+    <span class="fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/michaelbreshock">
+    <span class="fab fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/michaelbreshock/">
+    <span class="fab fa-linkedin fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="mailto:mbreshock@gmail.com">
+    <span class="fas fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Projects</h1>
+
+</div>
+
+
+<div id="open-case-studies-johns-hopkins-data-science-lab" class="section level2">
+<h2>Open Case Studies | <a href="https://jhudatascience.org/">Johns Hopkins Data Science Lab</a></h2>
+<p><img src="OCS_icon.png" width="25%" style="float:right;padding:20px" /></p>
+<p><a href="https://www.opencasestudies.org/">Open Case Studies (OCS)</a> is a repository of open source data science case studies on current public health problems using real datasets. My project is updating the current case studies by removing barriers, implementing interactive elements, and expanding reach. My master’s thesis will analyze the impact of these updates on data science education inside and outside the classroom.</p>
+<p>         </p>
+<div id="ocsdata---r-package" class="section level3">
+<h3>OCSdata - R Package</h3>
+<p><img src="OCS_GitHub_Diagram.png" width="40%" style="float:left;padding:20px" /></p>
+<p>All of our case study data is available in their respective <a href="https://github.com/opencasestudies">OCS GitHub</a> repositories. Accessing the data from github can be a confusing process for users unfamiliar with git and leaves room for error. To remove this barrier we’ve developed <a href="https://github.com/opencasestudies/OCSdata">OCSdata</a>, a package that enables OCS users to download case study data using simple functions all within R. Simply install with the following command: <code>devtools::install_github("opencasestudies/OCSdata")</code></p>
+<p>         </p>
+<!-- <center> -->
+<!-- ![Accessing Case Study Data Flowchart](./OCS_GitHub_Diagram.png){width=50%} -->
+<!-- </center> -->
+</div>
+<div id="makecasestudies---webapp" class="section level3">
+<h3>MakeCaseStudies - Webapp</h3>
+<p><img src="makecasestudies.png" width="40%" style="float:right;padding:20px" /></p>
+<p>To enable our users to create their own digital lessons we developed a webapp called <a href="https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/">MakeCaseStudies</a> using <a href="https://shiny.rstudio.com/">Shiny</a>. The app has a simple user interface that allows users to copy and paste their content and have it automatically knitted into an HTML document that can easily be hosted on education platforms such as BlackBoard and shared with students. The text inputs open with defaults that construct a case study on the Gram stain method to illustrate what can be achieved with the app. Users can navigate to the ‘Preview’ tab to inspect the case study being crafted before downloading the HTML file.</p>
+<!-- <center> -->
+<!-- ![MakeCaseStudies Preview Tab](./makecasestudies.png){width=50%} -->
+<!-- </center> -->
+<p>         </p>
+</div>
+</div>
+<div id="psychiatric-neuroimaging-bakker-memory-lab" class="section level2">
+<h2>Psychiatric Neuroimaging | <a href="https://bakkerlab.johnshopkins.edu/index.html">Bakker Memory Lab</a></h2>
+<p>Worked as a research student under Dr. Farah Naaz and provided programming support for neuroimaging experiments.</p>
+<div id="random-dot-motion-rdm" class="section level3">
+<h3>Random Dot Motion (RDM)</h3>
+<p>Developed in Matlab a custom script using <a href="http://psychtoolbox.org/">Psychtoolbox</a> to display RDM as a visual stimulus for subjects under MRI brain scan. Used to study psychiatric disorders.</p>
+</div>
+<div id="brain-imaging-data-structure-bids-converter" class="section level3">
+<h3>Brain Imaging Data Structure (BIDS) Converter</h3>
+<p>Developed Matlab scripts and functions to programmatically convert neuroimaging data folders to the <a href="https://bids.neuroimaging.io/">BIDS standard format</a>. This format is being adopted to support comparisons of imaging data across labs and improve reproducibility.</p>
+<p>         </p>
+</div>
+</div>
+<div id="nebuflask-a-user-friendly-nebulizer-bioinnovation-and-design-lab" class="section level2">
+<h2>NebuFlask: A User-Friendly Nebulizer | <a href="https://www.scu.edu/engineering/labs--research/labs/bioinnovation-and-design-lab/">BioInnovation and Design Lab</a></h2>
+<p>Lead an interdisciplinary team of engineers to design and prototype an upgraded nebulizer for my senior design project. Identified user needs and areas for improvement, created a design to address these needs, and constructed a prototype. Final design made for a lightweight, quiet, rechargeable and discrete nebulizer that would allow for asthma patients to inhale their medications with ease.</p>
+<p>         </p>
+</div>
+<div id="incube-labs" class="section level2">
+<h2><a href="https://www.incubelabs.com/">InCube Labs</a></h2>
+<div id="spinal-cord-stimulator-for-chronic-pain" class="section level3">
+<h3>Spinal Cord Stimulator for Chronic Pain</h3>
+<p>Worked as an engineering intern at InCube Labs in 2018-2019. Specifically worked on a contract with Boston Scientific to develop a spinal cord stimulator (SCS) for the treatment of intractable, chronic pain. Supported the verification and validation process by identifying and removing bugs as well as drafting software specification requirements and test protocols.</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

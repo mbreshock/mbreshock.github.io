@@ -1,0 +1,22 @@
+---
+title: "Education"
+output: 
+  html_document:
+    toc: FALSE
+---
+
+## M.S.E in Biomedical Engeering
+Focus Area: Neuroengineering\
+Expected Graduation: December 2021\
+**Johns Hopkins University Whiting School of Engineering** *(Baltimore,MD)*
+
+![](./jhu_bme.png){width=50%}
+
+## B.S. in Bioengineering
+Focus Area: Medical Devices\
+Graduated: June 2019\
+**Santa Clara University School of Engineering** *(Santa Clara, CA)*
+
+![](./scu_eng.png){width=50%}
+
+

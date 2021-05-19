@@ -1,0 +1,87 @@
+---
+title: "Projects"
+output: 
+  html_document:
+    toc: FALSE
+---
+
+## Open Case Studies | [Johns Hopkins Data Science Lab](https://jhudatascience.org/)
+
+```{r, echo=FALSE, out.width='25%', out.extra='style="float:right;padding:20px"'}
+knitr::include_graphics('./OCS_icon.png')
+```
+
+[Open Case Studies (OCS)](https://www.opencasestudies.org/) is a repository of open source data science case studies on current public health problems using real datasets. My project is updating the current case studies by removing barriers, implementing interactive elements, and expanding reach. My master's thesis will analyze the impact of these updates on data science education inside and outside the classroom.
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+### OCSdata - R Package
+
+```{r, echo=FALSE, out.width='40%', out.extra='style="float:left;padding:20px"'}
+knitr::include_graphics('./OCS_GitHub_Diagram.png')
+```
+
+All of our case study data is available in their respective [OCS GitHub](https://github.com/opencasestudies) repositories. Accessing the data from 
+github can be a confusing process for users unfamiliar with git and leaves room for error. To remove this barrier we've developed [OCSdata](https://github.com/opencasestudies/OCSdata), a package that enables OCS users to download case study data using simple functions all within R. Simply install with the following command: `devtools::install_github("opencasestudies/OCSdata")`
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+<!-- <center> -->
+<!-- ![Accessing Case Study Data Flowchart](./OCS_GitHub_Diagram.png){width=50%} -->
+<!-- </center> -->
+
+### MakeCaseStudies - Webapp
+
+```{r, echo=FALSE, out.width='40%', out.extra='style="float:right;padding:20px"'}
+knitr::include_graphics('./makecasestudies.png')
+```
+
+To enable our users to create their own digital lessons we developed a webapp called [MakeCaseStudies](https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/) using [Shiny](https://shiny.rstudio.com/). The app has a simple user interface that allows users to copy and paste their content and have it automatically knitted into an HTML document that can easily be hosted on education platforms such as BlackBoard and shared with students. The text inputs open with defaults that construct a case study on the Gram stain method to illustrate what can be achieved with the app. Users can navigate to the 'Preview' tab to inspect the case study being crafted before downloading the HTML file.  
+
+<!-- <center> -->
+<!-- ![MakeCaseStudies Preview Tab](./makecasestudies.png){width=50%} -->
+<!-- </center> -->
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+## Psychiatric Neuroimaging | [Bakker Memory Lab](https://bakkerlab.johnshopkins.edu/index.html)
+Worked as a research student under Dr. Farah Naaz and provided programming support for neuroimaging experiments. 
+
+### Random Dot Motion (RDM)
+Developed in Matlab a custom script using [Psychtoolbox](http://psychtoolbox.org/) to display RDM as a visual stimulus for subjects under MRI brain scan. Used to study psychiatric disorders. 
+
+### Brain Imaging Data Structure (BIDS) Converter
+Developed Matlab scripts and functions to programmatically convert neuroimaging data folders to the [BIDS standard format](https://bids.neuroimaging.io/). This format is being adopted to support comparisons of imaging data across labs and improve reproducibility. 
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+## NebuFlask: A User-Friendly Nebulizer | [BioInnovation and Design Lab](https://www.scu.edu/engineering/labs--research/labs/bioinnovation-and-design-lab/)
+Lead an interdisciplinary team of engineers to design and prototype an upgraded nebulizer for my senior design project. Identified user needs and areas for improvement, created a design to address these needs, and constructed a prototype. Final design made for a lightweight, quiet, rechargeable and discrete nebulizer that would allow for asthma patients to inhale their medications with ease. 
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+## [InCube Labs](https://www.incubelabs.com/)
+
+### Spinal Cord Stimulator for Chronic Pain
+Worked as an engineering intern at InCube Labs in 2018-2019. Specifically worked on a contract with Boston Scientific to develop a spinal cord stimulator (SCS) for the treatment of intractable, chronic pain. Supported the verification and validation process by identifying and removing bugs as well as drafting software specification requirements and test protocols.
+

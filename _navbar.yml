@@ -1,0 +1,23 @@
+name: "Mywebsite"
+title: "Michael Breshock"
+type: inverse
+left:
+  - text: "Education"
+    href: ./education.html
+  - text: "Projects"
+    href: ./projects.html
+  - text: "Publications & Presentations"
+    href: ./pubsprez.html
+  - text: "Courses & Skills"
+    href: ./coursesskills.html
+  - text: "Honors"
+    href: ./honors.html
+right:
+  - icon: fab fa-github fa-lg
+    href: https://github.com/mbreshock
+  - icon: fab fa-twitter fa-lg
+    href: https://twitter.com/michaelbreshock
+  - icon: fab fa-linkedin fa-lg
+    href: https://www.linkedin.com/in/michaelbreshock/
+  - icon: fas fa-envelope fa-lg
+    href: mailto:mbreshock@gmail.com
