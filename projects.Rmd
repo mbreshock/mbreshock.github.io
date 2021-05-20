@@ -30,7 +30,11 @@ knitr::include_graphics('./OCS_GitHub_Diagram.png')
 ```
 
 All of our case study data is available in their respective [OCS GitHub](https://github.com/opencasestudies) repositories. Accessing the data from 
-github can be a confusing process for users unfamiliar with git and leaves room for error. To remove this barrier we've developed [OCSdata](https://github.com/opencasestudies/OCSdata), a package that enables OCS users to download case study data using simple functions all within R. Simply install with the following command: `devtools::install_github("opencasestudies/OCSdata")`
+github can be a confusing process for users unfamiliar with git and leaves room for error. To remove this barrier we've developed [OCSdata](https://github.com/opencasestudies/OCSdata), a package that enables OCS users to download case study data using simple functions all within R. Simply install with the following command: 
+```R
+# install.packages("devtools")
+devtools::install_github("opencasestudies/OCSdata")
+```
 
 &nbsp;
 &nbsp;
