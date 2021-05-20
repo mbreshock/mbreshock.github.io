@@ -4,3 +4,48 @@ output:
   html_document:
     toc: FALSE
 ---
+
+## **Skills**
+
+Programs: R, Python, Matlab, Unix, Git/Github, Google Analytics, LaTeX, Microsoft Office
+
+Projects: data wrangling, statistical analysis, visualization, machine learning/artificial intelligence, package development, web-based applications, continuous integration and deployment, experimental design
+
+
+
+## **Courses**
+
+### Cognitive Science
+
+Cracking the code: Theory and modeling of information coding in neural activity (Fall 2020). Taught by [Michael Bonner, PhD](https://cogsci.jhu.edu/directory/michael-bonner/), Department of Cognitive Science
+
+Introduction to Computational Cognitive Science (Fall 2019). Taught by [Tal Linzen, PhD](https://cogsci.jhu.edu/directory/tal-linzen/), Department of Cognitive Science
+
+
+
+### Data Science & Computational Biology
+
+Statistical Learning for Engineers (Fall 2020). Taught by [Jin Seob Kim, PhD](https://engineering.jhu.edu/faculty/jin-seob-kim/), Department of Mechanical Engineering
+
+Introduction to Computational Medicine: Imaging (Fall 2020). Taught by [Michael Miller, PhD](https://www.bme.jhu.edu/people/faculty/michael-i-miller/) and [Tilak Ratnanather, DPhil](https://www.bme.jhu.edu/people/faculty/tilak-ratnanather/), Department of Biomedical Engineering
+
+Advanced Data Science for Biomedical Engineering (Spring 2020). Taught by [Brian Caffo, PhD](https://www.jhsph.edu/faculty/directory/profile/1010/brian-s-caffo), Department of Biomedical Engineering
+
+Introduction to Data Science (Spring 2020). Taught by [Tamás Budavári, PhD](https://engineering.jhu.edu/ams/faculty/tamas-budavari/), Department of Applied Mathematics & Statistics
+
+Introduction to Neuro-Image Processing (Spring 2020). Taught by [Siamak Ardekani, PhD](https://www.bme.jhu.edu/people/faculty/siamak-ardekani/), Department of Biomedical Engineering
+
+
+
+### Neuroengineering
+
+Neural Implants and Interfaces (Spring 2020). Taught by [Gene Fridman, PhD](https://www.hopkinsmedicine.org/profiles/details/gene-fridman), Department of Biomedical Engineering
+
+Structure and Function of the Auditory and Vestibular Systems (Fall 2019). Taught by [Kathleen Cullen, PhD](https://www.bme.jhu.edu/people/faculty/kathleen-cullen/) and [Paul Fuchs, PhD](https://www.hopkinsmedicine.org/profiles/details/paul-fuchs), Department of Biomedical Engineering
+
+
+
+*All courses taken for credit from Johns Hopkins University*
+
+
+

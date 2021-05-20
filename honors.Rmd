@@ -5,3 +5,12 @@ output:
     toc: FALSE
 ---
 
+Graduation Distinction: *Magna cum Laude*, Santa Clara University (2019).
+
+University Honors Program, Santa Clara University (2015-2019).
+
+Tau Beta Pi National Engineering Honor Society, Santa Clara University (2018).
+
+Barry Goldwater Scholarship Nominee, Santa Clara University (2018).
+
+Finalist, Richard Osberg Undergraduate Research & Travel Fellowship, Santa Clara University (2017).
