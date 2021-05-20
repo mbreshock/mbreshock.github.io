@@ -4,3 +4,25 @@ output:
   html_document:
     toc: FALSE
 ---
+
+## Publications
+
+Simon JC, Sapozhnikov OA, Kreider W, **Breshock M**, Williams JC, Bailey MR. The role of trapped bubbles in kidney stone detection with the color Doppler ultrasound twinkling artifact. Phys Med Biol. 2018 Jan 9;63(2):025011. doi: [10.1088/1361-6560/aa9a2f](https://iopscience.iop.org/article/10.1088/1361-6560/aa9a2f). PMID: [29131810](https://pubmed.ncbi.nlm.nih.gov/29131810/); PMCID: [PMC5791757](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5791757/).
+
+## Presentations
+
+### Talks
+
+2021 Provost’s Teaching with Technology DELTA Symposium, Johns Hopkins University, virtual, symposium talk titled "Open Case Studies: an experiential lesson guide delivery platform"
+
+2019 Senior Design Conference, Santa Clara University School of Engineering, Santa Clara, California, oral presentation titled "Nebuflask: advancing usability of nebulizers to increase patient compliance"
+
+### Posters
+
+2019 School of Engineering Research Showcase, Santa Clara University, Santa Clara, California, poster presentation titled "Brain computer interface development for
+virtual reality applications"
+
+2019 University Honors Program Senior Poster Session, Santa Clara University, Santa Clara, California, poster presentation titled "NebuFlask: advancing usability of nebulizers to increase patient compliance"
+
+
+
