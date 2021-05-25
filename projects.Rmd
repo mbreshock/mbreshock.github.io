@@ -74,10 +74,10 @@ To enable our users to create their own digital lessons we developed a webapp ca
 Worked as a research student under Dr. Farah Naaz and provided programming support for neuroimaging experiments. 
 
 ### Random Dot Motion (RDM)
-Developed in Matlab a custom script using [Psychtoolbox](http://psychtoolbox.org/) to display RDM as a visual stimulus for subjects under MRI brain scan. This is used to study psychiatric disorders. 
+Developed a custom script in Matlab using [Psychtoolbox](http://psychtoolbox.org/) to display RDM as a visual stimulus for subjects under MRI brain scan in psychiatric studies. 
 
 ### Brain Imaging Data Structure (BIDS) Converter
-Developed Matlab scripts and functions to programmatically convert neuroimaging data folders to the [BIDS standard format](https://bids.neuroimaging.io/). This format is being adopted to support comparisons of imaging data across labs and improve reproducibility. 
+Developed Matlab scripts and functions to programmatically convert data from MRI machines to the [BIDS standard format](https://bids.neuroimaging.io/). This format is being adopted to support comparisons of imaging data across labs and improve reproducibility. 
 
 &nbsp;
 &nbsp;
