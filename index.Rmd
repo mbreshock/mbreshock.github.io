@@ -14,7 +14,7 @@ I am a master's student in the [Department of Biomedical Engineering](https://ww
 
 I find the brain fascinating and want to further our understanding of it. I am excited by the discoveries made possible by computational models and analyses in cognition/neuroscience and want to contribute to these pursuits. Throughout my program I've focused my studies on [neuroengineering](https://www.bme.jhu.edu/research/research-areas/neuroengineering/) and [biomedical data science](https://www.bme.jhu.edu/research/research-areas/biomedical-data-science/). The [courses](./coursesskills.html) I've taken and my research experiences have allowed me to wrangle, analyze, and visualize real biological data including brain images, neural recordings, covid-19 cases and more. Post graduation, I hope to gain industry experience as a data scientist working with neurological data. Eventually, I plan to pursue a Ph.D in computational neuroscience.\  
 
-
+See my [CV on Overleaf](https://www.overleaf.com/read/ysmpjzgfcxxk).
 
 
 <center>
