@@ -7,7 +7,7 @@ output:
 
 ## **Skills**
 
-Programs: R, Python, Matlab, Unix, Git/Github, Google Analytics, LaTeX, Microsoft Office
+Programs: R, Python, Matlab, Unix, Git/GitHub, Google Analytics, LaTeX, Microsoft Office
 
 Projects: data wrangling, statistical analysis, visualization, machine learning/artificial intelligence, package development, web-based applications, continuous integration and deployment, experimental design
 
