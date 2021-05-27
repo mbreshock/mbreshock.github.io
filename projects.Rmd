@@ -48,13 +48,13 @@ devtools::install_github("opencasestudies/OCSdata")
 
 
 
-### [MakeCaseStudies](https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/) - Webapp
+### [MakeCaseStudies](https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/) - WebApp
 
 ```{r, echo=FALSE, out.width='40%', out.extra='style="float:right;padding:20px"'}
 knitr::include_graphics('./makecasestudies.png')
 ```
 
-To enable our users to create their own digital lessons we developed a webapp called [MakeCaseStudies](https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/) using [Shiny](https://shiny.rstudio.com/). The app has a simple user interface that allows users to copy and paste their content and have it automatically knitted into an HTML document that can easily be hosted on education platforms such as BlackBoard and shared with students. The app opens with default inputs that construct a case study on the Gram stain method to illustrate what can be achieved with the app. Users can change the inputs to their own content and navigate to the 'Preview' tab to inspect the case study being crafted before downloading the HTML file.  
+[MakeCaseStudies](https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/) is a web-based application made with [Shiny](https://shiny.rstudio.com/). This dashboard enables our users to create their own digital lessons in a simple, user-friendly environment. The app has an easy-to-use interface where users can copy and paste their content into the input boxes on the 'Create' tab and check the 'Preview' tab to see what they've made so far. Finally, users can click on the 'Make Case Study' button at the top to download their lesson as an .HTML file that can easily be hosted on education platforms and shared with students. The app opens with default inputs that consist of a case study on the Gram stain method as an example of what can be achieved with the app. 
 
 <!-- <center> -->
 <!-- ![MakeCaseStudies Preview Tab](./makecasestudies.png){width=50%} -->
