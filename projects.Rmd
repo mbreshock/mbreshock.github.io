@@ -23,14 +23,13 @@ knitr::include_graphics('./OCS_icon.png')
 
 
 
-### OCSdata - R Package
+### [OCSdata](https://github.com/opencasestudies/OCSdata) - R Package
 
 ```{r, echo=FALSE, out.width='40%', out.extra='style="float:left;padding:20px"'}
 knitr::include_graphics('./OCS_GitHub_Diagram.png')
 ```
-
-All of our case study data is available in their respective [OCS GitHub](https://github.com/opencasestudies) repositories. Accessing the data from 
-github can be a confusing process for users unfamiliar with git and leaves room for error. To remove this barrier we've developed [OCSdata](https://github.com/opencasestudies/OCSdata), a package that enables OCS users to download case study data using simple functions all within R. Simply install with the following command: 
+All the case study data is available in their respective [OCS GitHub](https://github.com/opencasestudies) repositories. However, case study users new to GitHub can find it a confusing process to access data from repositories. On top of that, users then must move the downloaded data into to the appropriate local directory. Overall, this process leaves room for error and acts as a barrier to introductory level students. Troubleshooting these errors can be a headache for both students and instructors and eats away at valuable learning time. [OCSdata](https://github.com/opencasestudies/OCSdata) is an R package that bridges the gap from web-browser to IDE, allowing users to automatically download the data they need with simple functions all within R. 
+Install the package with the following command: 
 ```R
 # install.packages("devtools")
 devtools::install_github("opencasestudies/OCSdata")
@@ -49,7 +48,7 @@ devtools::install_github("opencasestudies/OCSdata")
 
 
 
-### MakeCaseStudies - Webapp
+### [MakeCaseStudies](https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/) - Webapp
 
 ```{r, echo=FALSE, out.width='40%', out.extra='style="float:right;padding:20px"'}
 knitr::include_graphics('./makecasestudies.png')

@@ -386,9 +386,8 @@ $(document).ready(function () {
 <p><a href="https://www.opencasestudies.org/">Open Case Studies (OCS)</a> is a repository of open source data science case studies on current public health problems using real data. My project is updating the current case studies by removing barriers, implementing interactive elements, and expanding reach. My master’s thesis will analyze the impact of these updates on data science education inside and outside the classroom.</p>
 <p>         </p>
 <div id="ocsdata---r-package" class="section level3">
-<h3>OCSdata - R Package</h3>
-<p><img src="OCS_GitHub_Diagram.png" width="40%" style="float:left;padding:20px" /></p>
-<p>All of our case study data is available in their respective <a href="https://github.com/opencasestudies">OCS GitHub</a> repositories. Accessing the data from github can be a confusing process for users unfamiliar with git and leaves room for error. To remove this barrier we’ve developed <a href="https://github.com/opencasestudies/OCSdata">OCSdata</a>, a package that enables OCS users to download case study data using simple functions all within R. Simply install with the following command:</p>
+<h3><a href="https://github.com/opencasestudies/OCSdata">OCSdata</a> - R Package</h3>
+<p><img src="OCS_GitHub_Diagram.png" width="40%" style="float:left;padding:20px" /> All the case study data is available in their respective <a href="https://github.com/opencasestudies">OCS GitHub</a> repositories. However, case study users new to GitHub can find it a confusing process to access data from repositories. On top of that, users then must move the downloaded data into to the appropriate local directory. Overall, this process leaves room for error and acts as a barrier to introductory level students. Troubleshooting these errors can be a headache for both students and instructors and eats away at valuable learning time. <a href="https://github.com/opencasestudies/OCSdata">OCSdata</a> is an R package that bridges the gap from web-browser to IDE, allowing users to automatically download the data they need with simple functions all within R. Install the package with the following command:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(&quot;devtools&quot;)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;opencasestudies/OCSdata&quot;</span>)</span></code></pre></div>
 <p>         </p>
@@ -397,7 +396,7 @@ $(document).ready(function () {
 <!-- </center> -->
 </div>
 <div id="makecasestudies---webapp" class="section level3">
-<h3>MakeCaseStudies - Webapp</h3>
+<h3><a href="https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/">MakeCaseStudies</a> - Webapp</h3>
 <p><img src="makecasestudies.png" width="40%" style="float:right;padding:20px" /></p>
 <p>To enable our users to create their own digital lessons we developed a webapp called <a href="https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/">MakeCaseStudies</a> using <a href="https://shiny.rstudio.com/">Shiny</a>. The app has a simple user interface that allows users to copy and paste their content and have it automatically knitted into an HTML document that can easily be hosted on education platforms such as BlackBoard and shared with students. The app opens with default inputs that construct a case study on the Gram stain method to illustrate what can be achieved with the app. Users can change the inputs to their own content and navigate to the ‘Preview’ tab to inspect the case study being crafted before downloading the HTML file.</p>
 <!-- <center> -->
