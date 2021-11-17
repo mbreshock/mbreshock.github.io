@@ -29,7 +29,12 @@ knitr::include_graphics('./OCS_icon.png')
 ```{r, echo=FALSE, out.width='25%', out.extra='style="float:left;padding:20px"'}
 knitr::include_graphics('./OCSdata_hexsticker_bold.png')
 ```
+
 All the case study data is available in their respective [OCS GitHub](https://github.com/opencasestudies) repositories. However, case study users new to GitHub can find it a confusing process to access data from repositories. On top of that, users then must move the downloaded data into to the appropriate local directory. Overall, this process leaves room for error and acts as a barrier to introductory level students. Troubleshooting these errors can be a headache for both students and instructors and eats away at valuable learning time. [OCSdata](https://github.com/opencasestudies/OCSdata) is an R package that bridges the gap from web-browser to IDE, allowing users to automatically download the data they need with simple functions all within R. Now available on the Comprehensive R Archive Network [CRAN](https://CRAN.R-project.org/package=OCSdata)! 
+
+[![CRAN status](https://www.r-pkg.org/badges/version/OCSdata)](https://CRAN.R-project.org/package=OCSdata)
+[![Downloads](http://cranlogs.r-pkg.org/badges/grand-total/OCSdata)](https://cran.r-project.org/package=OCSdata)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5214347.svg)](https://doi.org/10.5281/zenodo.5214347)
 
 Install the package with the following command: 
 ```R
