@@ -11,7 +11,7 @@ output:
 knitr::include_graphics('./OCS_icon.png')
 ```
 
-[Open Case Studies (OCS)](https://www.opencasestudies.org/) is a repository of open source data science case studies on current public health problems using real data. My project is updating the current case studies by removing barriers, implementing interactive elements, and expanding reach. My master's thesis will analyze the impact of these updates on data science education inside and outside the classroom. \
+[Open Case Studies (OCS)](https://www.opencasestudies.org/) is a repository of open source data science case studies on current public health problems using real data.  My project updated the current case studies by removing barriers, implementing interactive elements, and expanding reach. My master’s thesis reported on the success of these developments and discussed their significance based on the results from an analysis of user data and feedback. Two major developments made in this project are discussed further below. \
 
 
 &nbsp;

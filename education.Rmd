@@ -7,8 +7,10 @@ output:
 
 ## M.S.E in Biomedical Engeering
 Focus Area: Neuroengineering\
-Expected Graduation: December 2021\
-**Johns Hopkins University Whiting School of Engineering** *(Baltimore,MD)*
+Graduated: December 2021\
+**Johns Hopkins University Whiting School of Engineering** *(Baltimore,MD)*\
+Thesis Title - Expanding Access and Removing Barriers: Data Science Education with the Open Case Studies Digital Platform\
+Advisor: [Carrie Wright, PhD](https://carriewright11.github.io/) (Department of Biostatistics, *Johns Hopkins Bloomberg School of Public Health*)
 
 ![](./jhu_bme.png){width=50%}
 
