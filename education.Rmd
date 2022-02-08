@@ -5,7 +5,7 @@ output:
     toc: FALSE
 ---
 
-## M.S.E in Biomedical Engeering
+## M.S.E. in Biomedical Engeering
 Focus Area: Neuroengineering\
 Graduated: December 2021\
 **Johns Hopkins University Whiting School of Engineering** *(Baltimore,MD)*\
