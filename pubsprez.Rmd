@@ -7,8 +7,9 @@ output:
 
 ## **Publications**
 
-Bartho, Murray; **Breshock, Michael**; and Nolte, Megan, "NebuFlask: Advancing Usability of Nebulizers to Increase Patient Compliance" (2019). *Bioengineering Senior Theses*. 88. [scholarcommons.scu.edu/bioe_senior/88](https://scholarcommons.scu.edu/bioe_senior/88)
+**Breshock, M. R.** (2021). Expanding access and removing barriers: Data science education with the Open Case Studies digital platform [Thesis, Johns Hopkins University]. [jscholarship.library.jhu.edu/handle/1774.2/66820](https://jscholarship.library.jhu.edu/handle/1774.2/66820)
 
+Bartho, Murray; **Breshock, Michael**; and Nolte, Megan, "NebuFlask: Advancing Usability of Nebulizers to Increase Patient Compliance" (2019). *Bioengineering Senior Theses*. 88. [scholarcommons.scu.edu/bioe_senior/88](https://scholarcommons.scu.edu/bioe_senior/88)
 
 Simon JC, Sapozhnikov OA, Kreider W, **Breshock M**, Williams JC, Bailey MR. The role of trapped bubbles in kidney stone detection with the color Doppler ultrasound twinkling artifact. Phys Med Biol. 2018 Jan 9; 63(2): 025011. doi: [10.1088/1361-6560/aa9a2f](https://iopscience.iop.org/article/10.1088/1361-6560/aa9a2f). PMID: [29131810](https://pubmed.ncbi.nlm.nih.gov/29131810/); PMCID: [PMC5791757](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5791757/).
 
