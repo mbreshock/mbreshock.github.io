@@ -4,8 +4,8 @@ output:
   html_document:
     toc: FALSE
 ---
-```{r, echo=FALSE, out.width='25%', out.extra='style="float:right;padding:20px"'}
-knitr::include_graphics('./MB_headshot.jpg')
+```{r, echo=FALSE, out.width='50%', out.extra='style="float:right;padding:20px"'}
+knitr::include_graphics('./tulip_headshot.png')
 ```
 <!-- ![](./MB_headshot.jpg){width=20%} -->
 
