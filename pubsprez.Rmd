@@ -23,6 +23,12 @@ Simon JC, Sapozhnikov OA, Kreider W, **Breshock M**, Williams JC, Bailey MR. The
 
 ### Posters
 
+2023 Alzheimer's Association International Conference 2023, Amsterdam, The Netherlands, poster presentation titled "US Dementia Care Spending by State, 2010-2019"
+
+```{r, echo=FALSE, out.width='100%'}
+knitr::include_graphics('./AAIC23_poster_US_Dementia_spending.pdf')
+```
+
 2019 School of Engineering Research Showcase, Santa Clara University, Santa Clara, California, poster presentation titled "Brain computer interface development for
 virtual reality applications"
 
