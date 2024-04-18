@@ -7,15 +7,27 @@ output:
 
 ## **Publications**
 
-**Breshock, M. R.** (2021). Expanding access and removing barriers: Data science education with the Open Case Studies digital platform [Thesis, Johns Hopkins University]. [jscholarship.library.jhu.edu/handle/1774.2/66820](https://jscholarship.library.jhu.edu/handle/1774.2/66820)
+Lastuka A, **Breshock MR**, McHugh TA, Sogge WT, Swart V, Dieleman JL. (2024). US dementia care spending by state: 2010–2019. *Alzheimer’s & Dementia*. DOI: [10.1002/alz.13746](https://doi.org/10.1002/alz.13746)
 
-Bartho, Murray; **Breshock, Michael**; and Nolte, Megan, "NebuFlask: Advancing Usability of Nebulizers to Increase Patient Compliance" (2019). *Bioengineering Senior Theses*. 88. [scholarcommons.scu.edu/bioe_senior/88](https://scholarcommons.scu.edu/bioe_senior/88)
+Wright C, **Breshock M**, Atta L, Hicks S. (2022). An Educator’s Guide to the Open Case Studies. Leanpub Ebook: [leanpub.com/opencasestudies_guide](https://leanpub.com/opencasestudies_guide).
+
+**Breshock, Michael**. (2021). Expanding access and removing barriers: Data science education with the Open Case Studies digital platform [Thesis, Johns Hopkins University]. [jscholarship.library.jhu.edu/handle/1774.2/66820](https://jscholarship.library.jhu.edu/handle/1774.2/66820)
+
+Bartho, Murray; **Breshock, Michael**; and Nolte, Megan, "NebuFlask: Advancing Usability of Nebulizers to Increase Patient Compliance." (2019). *Bioengineering Senior Theses*. 88. [scholarcommons.scu.edu/bioe_senior/88](https://scholarcommons.scu.edu/bioe_senior/88)
 
 Simon JC, Sapozhnikov OA, Kreider W, **Breshock M**, Williams JC, Bailey MR. The role of trapped bubbles in kidney stone detection with the color Doppler ultrasound twinkling artifact. Phys Med Biol. 2018 Jan 9; 63(2): 025011. doi: [10.1088/1361-6560/aa9a2f](https://iopscience.iop.org/article/10.1088/1361-6560/aa9a2f). PMID: [29131810](https://pubmed.ncbi.nlm.nih.gov/29131810/); PMCID: [PMC5791757](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5791757/).
+
+### **Under Review**
+
+Lastuka A, Bliss E, **Breshock MR**, Iannucci VC, Sogge WT, Taylor KV, Pedroza Velandia P, Dieleman JL. (2024). Societal costs of dementia: 204 countries, 2000–2019. *Journal of Alzheimer's Disease*. Under Review. Submitted February 2024.
+
+Wright C, Meng Q, **Breshock MR**, Atta L, Taub MA, Jager LR, Muschelli J, Hicks SC. (2023). Open Case Studies: Statistics and Data Science Education through Real-World Applications. *Journal of Statistics and Data Science Education*. Under Review. Response to Reviewers submitted April 2024. arXiv: [2301.05298](https://arxiv.org/abs/2301.05298).
 
 ## **Presentations**
 
 ### Talks
+
+2024 Global Conference of Alzheimer’s Disease International, Krakow, Poland, virtual presentation titled "Societal costs of dementia: 204 countries, 2000–2019"
 
 2021 Provost’s Teaching with Technology DELTA Symposium, Johns Hopkins University, virtual, symposium talk titled "Open Case Studies: an experiential lesson guide delivery platform" - [Recording](https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ec557885-db08-46f0-b187-ad49015cf513)
 
@@ -23,14 +35,15 @@ Simon JC, Sapozhnikov OA, Kreider W, **Breshock M**, Williams JC, Bailey MR. The
 
 ### Posters
 
-2023 Alzheimer's Association International Conference 2023, Amsterdam, The Netherlands, poster presentation titled "US Dementia Care Spending by State, 2010-2019"
+2024 Global Conference of Alzheimer’s Disease International, Krakow, Poland, poster presentation titled "US Dementia Care Spending by State, 2010-2019"
+
+2023 Alzheimer's Association International Conference, Amsterdam, The Netherlands, poster presentation titled "US Dementia Care Spending by State, 2010-2019"
 
 ```{r, echo=FALSE, out.width='100%'}
 knitr::include_graphics('./AAIC23_poster_US_Dementia_spending.pdf')
 ```
 
-2019 School of Engineering Research Showcase, Santa Clara University, Santa Clara, California, poster presentation titled "Brain computer interface development for
-virtual reality applications"
+2019 School of Engineering Research Showcase, Santa Clara University, Santa Clara, California, poster presentation titled "Brain computer interface development for virtual reality applications"
 
 2019 University Honors Program Senior Poster Session, Santa Clara University, Santa Clara, California, poster presentation titled "NebuFlask: advancing usability of nebulizers to increase patient compliance"
 
