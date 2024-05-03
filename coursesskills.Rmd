@@ -7,7 +7,7 @@ output:
 
 ## **Skills**
 
-Programs: R, Python, Matlab, Unix, Git/GitHub, Google Analytics, LaTeX, Microsoft Office, SQL
+Programs: R, Python, MATLAB, Bash, Git/GitHub, Google Analytics, LaTeX, Microsoft Office, SQL
 
 Projects: Big data processing, statistical analysis and modeling, visualization, machine learning/artificial intelligence, package development, web-based applications, continuous integration and deployment, experimental design, image analysis, graphic design
 
