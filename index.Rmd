@@ -5,7 +5,7 @@ output:
     toc: FALSE
 ---
 ```{r, echo=FALSE, out.width='50%', out.extra='style="float:right;padding:20px"'}
-knitr::include_graphics('./tulip_headshot.png')
+knitr::include_graphics('./4B1A0891_fav.jpg')
 ```
 <!-- ![](./MB_headshot.jpg){width=20%} -->
 
