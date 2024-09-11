@@ -15,11 +15,9 @@ Previously, I was a master's student/research assistant working on the [Open Cas
 
 Throughout my graduate program I've focused my studies on [neuroengineering](https://www.bme.jhu.edu/research/research-areas/neuroengineering/) and [biomedical data science](https://www.bme.jhu.edu/research/research-areas/biomedical-data-science/). Through my [courses](./coursesskills.html) and research, I processed, analyzed, and visualized real biomedical data including brain images, electrophysiological recordings, [Covid-19 cases](https://mbreshock.shinyapps.io/covid_dashboard/) and more.
 
-I am excited by the power of data science to extract meaning and information from data. Computational methods and tool-kits are enabling novel discoveries and innovations in all facets of life, especially with artificial intelligence and machine learning. As new technologies are developed, special care must be taken to ensure it is used ethically and responsibly. As my career progresses, I'd like to help ensure that AI/ML is used to promote more social good and minimize possible damages. I am particularly excited by the potential of AI/ML to decode neural signals and enable robust brain-machine interfaces.\  
+I am excited by the power of data science to extract meaning and information from data. Computational methods and tool-kits are enabling novel discoveries and innovations in all facets of life, especially with artificial intelligence and machine learning. In my career I will use data-driven methods to solve complex problems and deliver key insights to stakeholders to make informed decisions supported by evidence. As new technologies are developed, special care must be taken to ensure it is used ethically and responsibly. As my career progresses, I'd like to help ensure that AI/ML is used to promote more social good and minimize possible damages.\  
 
 See my [CV on Overleaf](https://www.overleaf.com/read/ysmpjzgfcxxk).
-
-*My work at IHME is developed using [Bitbucket](https://bitbucket.org/product) for version control instead of GitHub due to privacy concerns, data use agreements (DUA) and the sensitive nature of the datasets we use. For this reason my most recent work is not open-access and my contribution history since starting at IHME is nearly non-existent on GitHub.*
 
 <!---<center>--->
 <!---![](https://ghchart.rshah.org/mbreshock){width=500px}--->
