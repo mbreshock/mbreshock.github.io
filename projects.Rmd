@@ -56,7 +56,24 @@ devtools::install_github("opencasestudies/OCSdata")
 <!-- ![Accessing Case Study Data Flowchart](./OCS_GitHub_Diagram.png){width=50%} -->
 <!-- </center> -->
 
+### [COVID-19 Data Dashboard](https://github.com/mbreshock/covid_dashboard_py)
+[![Posit Cloud](https://img.shields.io/badge/launch-posit%20cloud-447099?style=flat)](https://connect.posit.cloud/mbreshock/content/01926563-bab5-c811-3c03-cb04788bfbe7)
 
+```{r, echo=FALSE, out.width='40%', out.extra='style="float:right;padding:20px"'}
+knitr::include_graphics('./covid_dashboard.png')
+```
+
+A data dashboard visualizing total/new cases and deaths attributed to COVID-19 over time. The dashboard was developed with Python for [Shiny](https://shiny.posit.co/py/). The dashboard consists of 4 radio buttons on a side panel and two plots on the main panel. The two plots display time series data of global and country-level metrics. The metric is defined by the radio button input. The four metrics that can be visualized are: total cases, new cases, total deaths, & new deaths. This dashboard was originally constructed with [R Shiny](https://mbreshock.shinyapps.io/covid_dashboard/) as an [assignment](https://github.com/mbreshock/covid_dashboard/tree/main) for a biomedical data science course I took in graduate school. 
+
+
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+<br/><br/>
 
 
 ### [MakeCaseStudies](https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/) - WebApp
@@ -65,7 +82,7 @@ devtools::install_github("opencasestudies/OCSdata")
 knitr::include_graphics('./makecasestudies.png')
 ```
 
-[MakeCaseStudies](https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/) is a web-based application made with [Shiny](https://shiny.rstudio.com/). This dashboard enables our users to create their own digital lessons in a simple, user-friendly environment. The app has an easy-to-use interface where users can copy and paste their content into the input boxes on the 'Create' tab and check the 'Preview' tab to see what they've made so far. Finally, users can click on the 'Make Case Study' button at the top to download their lesson as an .HTML file that can easily be hosted on education platforms and shared with students. The app opens with default inputs that consist of a case study on the Gram stain method as an example of what can be achieved with the app. 
+[MakeCaseStudies](https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/) is a web-based application made with [Shiny](https://shiny.rstudio.com/). This dashboard enables our users to create their own digital lessons in a simple, user-friendly environment. The app has an easy-to-use interface where users can copy and paste their content into the input boxes on the 'Create' tab and check the 'Preview' tab to see what they've made so far. Finally, users can click on the 'Make Case Study' button at the top to download their lesson as an .HTML file that can easily be hosted on education platforms and shared with students. The app opens with default inputs that consist of a case study on the Gram stain method as an example of what can be achieved with the app.  
 
 <!-- <center> -->
 <!-- ![MakeCaseStudies Preview Tab](./makecasestudies.png){width=50%} -->
@@ -77,8 +94,19 @@ knitr::include_graphics('./makecasestudies.png')
 &nbsp;
 &nbsp;
 
-
 <br/><br/>
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+
+
+
+
 
 ## Psychiatric Neuroimaging | [Bakker Memory Lab](https://bakkerlab.johnshopkins.edu/index.html)
 Worked as a research student under Dr. Farah Naaz and provided programming support for neuroimaging experiments. 

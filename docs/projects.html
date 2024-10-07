@@ -13,7 +13,7 @@
 
 <title>Projects</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -30,8 +30,8 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -41,6 +41,7 @@
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
     </style>
+
 
 
 <style type="text/css">
@@ -53,7 +54,7 @@
 </style>
 <style type="text/css" data-origin="pandoc">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -88,11 +89,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
+code span.at { color: #204a87; } /* Attribute */
 code span.bn { color: #0000cf; } /* BaseN */
 code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
+code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #8f5902; font-style: italic; } /* Comment */
 code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
 code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
@@ -101,14 +102,14 @@ code span.dv { color: #0000cf; } /* DecVal */
 code span.er { color: #a40000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
 code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
 code span.ot { color: #8f5902; } /* Other */
 code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
 code span.ss { color: #4e9a06; } /* SpecialString */
 code span.st { color: #4e9a06; } /* String */
 code span.va { color: #000000; } /* Variable */
@@ -123,13 +124,20 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
   for (var i = 0; i < sheets.length; i++) {
     if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
     try { var rules = sheets[i].cssRules; } catch (e) { continue; }
-    for (var j = 0; j < rules.length; j++) {
+    var j = 0;
+    while (j < rules.length) {
       var rule = rules[j];
       // check if there is a div.sourceCode rule
-      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
       var style = rule.style.cssText;
       // check if color or background-color is set
-      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
       // replace div.sourceCode by a pre.sourceCode rule
       sheets[i].deleteRule(j);
       sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
@@ -164,6 +172,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -221,11 +232,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -254,8 +269,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -263,16 +278,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -316,7 +324,7 @@ $(document).ready(function () {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -380,63 +388,158 @@ $(document).ready(function () {
 </div>
 
 
-<div id="open-case-studies-johns-hopkins-data-science-lab" class="section level2">
-<h2>Open Case Studies | <a href="https://jhudatascience.org/">Johns Hopkins Data Science Lab</a></h2>
+<div id="open-case-studies-johns-hopkins-data-science-lab"
+class="section level2">
+<h2>Open Case Studies | <a href="https://jhudatascience.org/">Johns
+Hopkins Data Science Lab</a></h2>
 <p><img src="OCS_icon.png" width="25%" style="float:right;padding:20px" /></p>
-<p><a href="https://www.opencasestudies.org/">Open Case Studies (OCS)</a> is a repository of open source data science case studies on current public health problems using real data. My project updated the current case studies by removing barriers, implementing interactive elements, and expanding reach. My master’s thesis reported on the success of these developments and discussed their significance based on the results from an analysis of user data and feedback. Two major developments made in this project are discussed further below.<br />
+<p><a href="https://www.opencasestudies.org/">Open Case Studies
+(OCS)</a> is a repository of open source data science case studies on
+current public health problems using real data. My project updated the
+current case studies by removing barriers, implementing interactive
+elements, and expanding reach. My master’s thesis reported on the
+success of these developments and discussed their significance based on
+the results from an analysis of user data and feedback. Two major
+developments made in this project are discussed further below.<br />
 </p>
 <p>         </p>
 <div id="ocsdata---r-package" class="section level3">
-<h3><a href="https://github.com/opencasestudies/OCSdata">OCSdata</a> - R Package</h3>
+<h3><a href="https://github.com/opencasestudies/OCSdata">OCSdata</a> - R
+Package</h3>
 <p><img src="OCSdata_hexsticker_bold.png" width="25%" style="float:left;padding:20px" /></p>
-<p>All the case study data is available in their respective <a href="https://github.com/opencasestudies">OCS GitHub</a> repositories. However, case study users new to GitHub can find it a confusing process to access data from repositories. On top of that, users then must move the downloaded data into to the appropriate local directory. Overall, this process leaves room for error and acts as a barrier to introductory level students. Troubleshooting these errors can be a headache for both students and instructors and eats away at valuable learning time. <a href="https://github.com/opencasestudies/OCSdata">OCSdata</a> is an R package that bridges the gap from web-browser to IDE, allowing users to automatically download the data they need with simple functions all within R. Now available on the Comprehensive R Archive Network <a href="https://CRAN.R-project.org/package=OCSdata">CRAN</a>!</p>
-<p><a href="https://CRAN.R-project.org/package=OCSdata"><img src="https://www.r-pkg.org/badges/version/OCSdata" alt="CRAN status" /></a> <a href="https://cran.r-project.org/package=OCSdata"><img src="http://cranlogs.r-pkg.org/badges/grand-total/OCSdata" alt="Downloads" /></a> <a href="https://doi.org/10.5281/zenodo.5214347"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5214347.svg" alt="DOI" /></a></p>
+<p>All the case study data is available in their respective <a
+href="https://github.com/opencasestudies">OCS GitHub</a> repositories.
+However, case study users new to GitHub can find it a confusing process
+to access data from repositories. On top of that, users then must move
+the downloaded data into to the appropriate local directory. Overall,
+this process leaves room for error and acts as a barrier to introductory
+level students. Troubleshooting these errors can be a headache for both
+students and instructors and eats away at valuable learning time. <a
+href="https://github.com/opencasestudies/OCSdata">OCSdata</a> is an R
+package that bridges the gap from web-browser to IDE, allowing users to
+automatically download the data they need with simple functions all
+within R. Now available on the Comprehensive R Archive Network <a
+href="https://CRAN.R-project.org/package=OCSdata">CRAN</a>!</p>
+<p><a href="https://CRAN.R-project.org/package=OCSdata"><img
+src="https://www.r-pkg.org/badges/version/OCSdata"
+alt="CRAN status" /></a> <a
+href="https://cran.r-project.org/package=OCSdata"><img
+src="http://cranlogs.r-pkg.org/badges/grand-total/OCSdata"
+alt="Downloads" /></a> <a
+href="https://doi.org/10.5281/zenodo.5214347"><img
+src="https://zenodo.org/badge/DOI/10.5281/zenodo.5214347.svg"
+alt="DOI" /></a></p>
 <p>Install the package with the following command:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># CRAN Version: </span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;OCSdata&quot;</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Developer Version: </span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(&quot;devtools&quot;)</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;opencasestudies/OCSdata&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="co"># CRAN Version: </span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;OCSdata&quot;</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="co"># Developer Version: </span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="co"># install.packages(&quot;devtools&quot;)</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;opencasestudies/OCSdata&quot;</span>)</span></code></pre></div>
 <p>         </p>
 <!-- <center> -->
 <!-- ![Accessing Case Study Data Flowchart](./OCS_GitHub_Diagram.png){width=50%} -->
 <!-- </center> -->
 </div>
+<div id="covid-19-data-dashboard" class="section level3">
+<h3><a href="https://github.com/mbreshock/covid_dashboard_py">COVID-19
+Data Dashboard</a></h3>
+<p><a
+href="https://connect.posit.cloud/mbreshock/content/01926563-bab5-c811-3c03-cb04788bfbe7"><img
+src="https://img.shields.io/badge/launch-posit%20cloud-447099?style=flat"
+alt="Posit Cloud" /></a></p>
+<p><img src="covid_dashboard.png" width="40%" style="float:right;padding:20px" /></p>
+<p>A data dashboard visualizing total/new cases and deaths attributed to
+COVID-19 over time. The dashboard was developed with Python for <a
+href="https://shiny.posit.co/py/">Shiny</a>. The dashboard consists of 4
+radio buttons on a side panel and two plots on the main panel. The two
+plots display time series data of global and country-level metrics. The
+metric is defined by the radio button input. The four metrics that can
+be visualized are: total cases, new cases, total deaths, &amp; new
+deaths. This dashboard was originally constructed with <a
+href="https://mbreshock.shinyapps.io/covid_dashboard/">R Shiny</a> as an
+<a
+href="https://github.com/mbreshock/covid_dashboard/tree/main">assignment</a>
+for a biomedical data science course I took in graduate school.</p>
+<p>         </p>
+<p><br/><br/></p>
+</div>
 <div id="makecasestudies---webapp" class="section level3">
-<h3><a href="https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/">MakeCaseStudies</a> - WebApp</h3>
+<h3><a
+href="https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/">MakeCaseStudies</a>
+- WebApp</h3>
 <p><img src="makecasestudies.png" width="40%" style="float:right;padding:20px" /></p>
-<p><a href="https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/">MakeCaseStudies</a> is a web-based application made with <a href="https://shiny.rstudio.com/">Shiny</a>. This dashboard enables our users to create their own digital lessons in a simple, user-friendly environment. The app has an easy-to-use interface where users can copy and paste their content into the input boxes on the ‘Create’ tab and check the ‘Preview’ tab to see what they’ve made so far. Finally, users can click on the ‘Make Case Study’ button at the top to download their lesson as an .HTML file that can easily be hosted on education platforms and shared with students. The app opens with default inputs that consist of a case study on the Gram stain method as an example of what can be achieved with the app.</p>
+<p><a
+href="https://rsconnect.biostat.jhsph.edu/MakeCaseStudies/">MakeCaseStudies</a>
+is a web-based application made with <a
+href="https://shiny.rstudio.com/">Shiny</a>. This dashboard enables our
+users to create their own digital lessons in a simple, user-friendly
+environment. The app has an easy-to-use interface where users can copy
+and paste their content into the input boxes on the ‘Create’ tab and
+check the ‘Preview’ tab to see what they’ve made so far. Finally, users
+can click on the ‘Make Case Study’ button at the top to download their
+lesson as an .HTML file that can easily be hosted on education platforms
+and shared with students. The app opens with default inputs that consist
+of a case study on the Gram stain method as an example of what can be
+achieved with the app.</p>
 <!-- <center> -->
 <!-- ![MakeCaseStudies Preview Tab](./makecasestudies.png){width=50%} -->
 <!-- </center> -->
 <p>         </p>
 <p><br/><br/></p>
-</div>
-</div>
-<div id="psychiatric-neuroimaging-bakker-memory-lab" class="section level2">
-<h2>Psychiatric Neuroimaging | <a href="https://bakkerlab.johnshopkins.edu/index.html">Bakker Memory Lab</a></h2>
-<p>Worked as a research student under Dr. Farah Naaz and provided programming support for neuroimaging experiments.</p>
-<div id="random-dot-motion-rdm" class="section level3">
-<h3>Random Dot Motion (RDM)</h3>
-<p>Developed a custom script in Matlab using <a href="http://psychtoolbox.org/">Psychtoolbox</a> to display RDM as a visual stimulus for subjects under MRI brain scan in psychiatric studies.</p>
-</div>
-<div id="brain-imaging-data-structure-bids-converter" class="section level3">
-<h3>Brain Imaging Data Structure (BIDS) Converter</h3>
-<p>Developed Matlab scripts and functions to programmatically convert data from MRI machines to the <a href="https://bids.neuroimaging.io/">BIDS standard format</a>. This format is being adopted to support comparisons of imaging data across labs and improve reproducibility.</p>
 <p>         </p>
 </div>
 </div>
-<div id="nebuflask-a-user-friendly-nebulizer-bioinnovation-and-design-lab" class="section level2">
-<h2>NebuFlask: A User-Friendly Nebulizer | <a href="https://www.scu.edu/engineering/labs--research/labs/bioinnovation-and-design-lab/">BioInnovation and Design Lab</a></h2>
-<p>Lead an interdisciplinary team of engineers to design and prototype an upgraded nebulizer for my senior design project. Identified user needs and areas for improvement, created a design to address these needs, and constructed a prototype. Final design made for a lightweight, quiet, rechargeable and discrete nebulizer that would allow for asthma patients to inhale their medications with ease.</p>
+<div id="psychiatric-neuroimaging-bakker-memory-lab"
+class="section level2">
+<h2>Psychiatric Neuroimaging | <a
+href="https://bakkerlab.johnshopkins.edu/index.html">Bakker Memory
+Lab</a></h2>
+<p>Worked as a research student under Dr. Farah Naaz and provided
+programming support for neuroimaging experiments.</p>
+<div id="random-dot-motion-rdm" class="section level3">
+<h3>Random Dot Motion (RDM)</h3>
+<p>Developed a custom script in Matlab using <a
+href="http://psychtoolbox.org/">Psychtoolbox</a> to display RDM as a
+visual stimulus for subjects under MRI brain scan in psychiatric
+studies.</p>
+</div>
+<div id="brain-imaging-data-structure-bids-converter"
+class="section level3">
+<h3>Brain Imaging Data Structure (BIDS) Converter</h3>
+<p>Developed Matlab scripts and functions to programmatically convert
+data from MRI machines to the <a
+href="https://bids.neuroimaging.io/">BIDS standard format</a>. This
+format is being adopted to support comparisons of imaging data across
+labs and improve reproducibility.</p>
+<p>         </p>
+</div>
+</div>
+<div
+id="nebuflask-a-user-friendly-nebulizer-bioinnovation-and-design-lab"
+class="section level2">
+<h2>NebuFlask: A User-Friendly Nebulizer | <a
+href="https://www.scu.edu/engineering/labs--research/labs/bioinnovation-and-design-lab/">BioInnovation
+and Design Lab</a></h2>
+<p>Lead an interdisciplinary team of engineers to design and prototype
+an upgraded nebulizer for my senior design project. Identified user
+needs and areas for improvement, created a design to address these
+needs, and constructed a prototype. Final design made for a lightweight,
+quiet, rechargeable and discrete nebulizer that would allow for asthma
+patients to inhale their medications with ease.</p>
 <p>         </p>
 </div>
 <div id="incube-labs" class="section level2">
 <h2><a href="https://www.incubelabs.com/">InCube Labs</a></h2>
-<div id="spinal-cord-stimulator-for-chronic-pain" class="section level3">
+<div id="spinal-cord-stimulator-for-chronic-pain"
+class="section level3">
 <h3>Spinal Cord Stimulator for Chronic Pain</h3>
-<p>Interned at InCube Labs in 2018-2019 and worked on a contract from Boston Scientific to develop a spinal cord stimulator (SCS) for the treatment of intractable, chronic pain. Supported the hardware and software teams’ verification and validation process by identifying and removing bugs as well as drafting software specification requirements and test protocols.</p>
+<p>Interned at InCube Labs in 2018-2019 and worked on a contract from
+Boston Scientific to develop a spinal cord stimulator (SCS) for the
+treatment of intractable, chronic pain. Supported the hardware and
+software teams’ verification and validation process by identifying and
+removing bugs as well as drafting software specification requirements
+and test protocols.</p>
 </div>
 </div>
 
