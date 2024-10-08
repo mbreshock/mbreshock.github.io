@@ -63,7 +63,7 @@ devtools::install_github("opencasestudies/OCSdata")
 knitr::include_graphics('./covid_dashboard.png')
 ```
 
-A data dashboard visualizing total/new cases and deaths attributed to COVID-19 over time. The dashboard was developed with Python for [Shiny](https://shiny.posit.co/py/). The dashboard consists of 4 radio buttons on a side panel and two plots on the main panel. The two plots display time series data of global and country-level metrics. The metric is defined by the radio button input. The four metrics that can be visualized are: total cases, new cases, total deaths, & new deaths. This dashboard was originally constructed with [R Shiny](https://mbreshock.shinyapps.io/covid_dashboard/) as an [assignment](https://github.com/mbreshock/covid_dashboard/tree/main) for a biomedical data science course I took in graduate school. 
+A data dashboard visualizing total/new cases and deaths attributed to COVID-19 over time. The dashboard was developed with [Shiny for Python](https://shiny.posit.co/py/). The dashboard consists of 4 radio buttons on a side panel and two plots on the main panel. The two plots display time series data of global and country-level metrics. The metric is defined by the radio button input. The four metrics that can be visualized are: total cases, new cases, total deaths, & new deaths. This dashboard was originally constructed with [R Shiny](https://mbreshock.shinyapps.io/covid_dashboard/) as an [assignment](https://github.com/mbreshock/covid_dashboard/tree/main) for a course I took in graduate school, "Advanced Data Science for Biomedical Engineering" at Johns Hopkins University. 
 
 
 
