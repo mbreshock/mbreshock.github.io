@@ -12,9 +12,18 @@
     <div class="container">
       <img class="brand" src="/ihme_headshot.jpg" alt="My Headshot" width="370" height="370" />
       <h1>Michael Robert Breshock</h1>
-      <p class="subtext">Welcome to Abell's Default Template 🚀</p>
-      <a class="button primary" href="https://abelljs.org/" target="_blank">View Documentation</a>
-      &nbsp;<button class="button secondary" id="counter-button">Counter <span id="count">0</span></button>
+      <p class="subtext">Biomedical engineer & data scientist who likes building things with code 🧬📊🧑‍💻</p>
+    </div>
+    <div class="social-buttons">
+      <a href="https://github.com/mbreshock" target="_blank" class="button github">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/michaelbreshock/" target="_blank" class="button linkedin">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://dev.to/mbreshock" target="_blank" class="button dev">
+        <i class="fab fa-dev"></i> DEV
+      </a>
     </div>
   </main>
   <script src="./client-assets/index-client.js" type="module"></script>
